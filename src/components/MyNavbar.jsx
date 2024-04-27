@@ -17,7 +17,7 @@ const MyNavbar = () => {
                     {/*<Link className="nav-link" to="career-section" spy={true} smooth={true} duration={500}>Career</Link>*/}
                     <Link className="nav-link" to="projects-section" spy={true} smooth={true} duration={500}>Projects</Link>
                     <Link className="nav-link" to="sub-projects-section" spy={true} smooth={true} duration={500}>Side Projects</Link>
-                    <Link className="nav-link" to="my-blog-section" spy={true} smooth={true} duration={500}>My Blog</Link>
+                    {/*<Link className="nav-link" to="my-blog-section" spy={true} smooth={true} duration={500}>My Blog</Link>*/}
                     <Link className="nav-link" to="contact-section" spy={true} smooth={true} duration={500}>Contact</Link>
                     {/* 추가 링크들 */}
                 </Nav>
