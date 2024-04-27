@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.contain-top {
+  top:40px
+}
+.message {
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.message {
+  position: fixed; /* 고정 위치 */
+  top: 8%; /* 상단에서부터의 거리 */
+  left: 50%; /* 부모 컨테이너를 기준으로 50% 위치에 배치 */
+  transform: translateX(-50%); /* X축으로 -50% 만큼 이동하여 중앙 정렬 */
+  z-index: 1000; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+  /* 기타 스타일은 이전 예시와 동일 */
+}
+
+.message span {
+  margin-left: 8px;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.success::before {
+  content: "✔";
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.message.error::before {
+  content: "✖";
+  color: #721c24;
+}
+
+.message.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.message.warning::before {
+  content: "⚠";
+  color: #856404;
+}
